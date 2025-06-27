@@ -2,36 +2,43 @@
 
 A compact convolutional neural network designed for semantic segmentation tasks involving datasets with a small number of classes. With only 47,000 to 171,000 trainable parameters, PequeNet achieves performance comparable to larger, widely adopted architectures such as U-Net and MobileNetV2, which have over 2 million parameters.
 
-
 ## Instructions
 
-Antes de realizar o treinamento ou inferência é necessário os seguintes passos para cada dataset:
+Before training or inference, the following steps must be completed for each dataset:
 
-1 - Atualizar o path no arquivo config.py, caso necessário.
+1 - Update the path in the config.py file, if necessary.
 
-2 - Baixar as imagens manualmente:
+2 - Manually download the images:
 
-LaRS - https://lojzezust.github.io/lars-dataset/#download
-Extraia o dataset no diretório LaRS na pasta **dataset/** e siga para o data augmentation.
+LaRS – https://lojzezust.github.io/lars-dataset/#download
+Extract the dataset into the dataset/LaRS directory and proceed to data augmentation.
 
-FUSeg - https://github.com/uwm-bigdata/wound-segmentation/tree/master/data/Foot%20Ulcer%20Segmentation%20Challenge
-Extraia o conteúdo deste diretório na pasta **datasets/Foot Ulcer Segmentation Challenge** e siga para o data augmentation.
+FUSeg – https://github.com/uwm-bigdata/wound-segmentation/tree/master/data/Foot%20Ulcer%20Segmentation%20Challenge
+Extract the contents of this directory into datasets/Foot Ulcer Segmentation Challenge and proceed to data augmentation.
 
-Medetec - As imagens já estão no diretório, basta seguir para o data augmentation.
+Medetec – The images are already in the directory. Proceed to data augmentation.
 
-Membrane - As imagens já estão no diretório, basta seguir para o data augmentation.
+Membrane – The images are already in the directory. Proceed to data augmentation.
 
-3 - Realizar o data augmentation
+3 - Perform data augmentation
 
-Execute: augmentation.ipynb
+Run: augmentation.ipynb
 
-4 - Executar os scrips:
+4 - Run the scripts:
 
-Para executar a PequeNet
+To run PequeNet:
 
- - pequenet-ciarp2025.ipynb 
+pequenet-ciarp2025.ipynb
 
-Para executar a U-Net ou a MobileNetV2
+To run U-Net or MobileNetV2:
 
- - u-net-and-mobilenetv2.ipynb
+u-net-and-mobilenetv2.ipynb
 
+## Citation
+
+@misc{alves2025pequenet,
+  author       = {Alan Klinger Sousa Alves},
+  title        = {PequeNet: A Lightweight CNN for Medical Image Segmentation},
+  year         = {2025},
+  howpublished = {\url{https://github.com/klingerkrieg/PequeNet-public}},
+}
