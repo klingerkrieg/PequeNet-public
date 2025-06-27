@@ -20,25 +20,33 @@ Medetec – The images are already in the directory. Proceed to data augmentatio
 
 Membrane – The images are already in the directory. Proceed to data augmentation.
 
-3 - Perform data augmentation
+3 - Perform data augmentation run:
 
-Run: augmentation.ipynb
+```
+augmentation.ipynb
+```
 
 4 - Run the scripts:
 
 To run PequeNet:
 
+```
 pequenet-ciarp2025.ipynb
+```
 
 To run U-Net or MobileNetV2:
 
+```
 u-net-and-mobilenetv2.ipynb
+```
 
 ## Citation
 
+```bibtex
 @misc{alves2025pequenet,
   author       = {Alan Klinger Sousa Alves},
   title        = {PequeNet: A Lightweight CNN for Medical Image Segmentation},
   year         = {2025},
   howpublished = {\url{https://github.com/klingerkrieg/PequeNet-public}},
 }
+```
